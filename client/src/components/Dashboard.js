@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiMap, FiList, FiBarChart3, FiAlertTriangle, FiClock, FiCheckCircle } from 'react-icons/fi';
+import { FiMap, FiList, FiBarChart2, FiAlertTriangle, FiClock, FiCheckCircle } from 'react-icons/fi';
 import { useNotam } from '../context/NotamContext';
 import { format } from 'date-fns';
 
@@ -264,7 +264,7 @@ const Dashboard = () => {
           </Link>
           
           <div className="flex items-center p-4 border border-gray-200 rounded-lg">
-            <FiBarChart3 className="w-6 h-6 text-purple-600 mr-3" />
+            <FiBarChart2 className="w-6 h-6 text-purple-600 mr-3" />
             <div>
               <h4 className="font-medium text-gray-900">Analytics</h4>
               <p className="text-sm text-gray-600">View statistics</p>
