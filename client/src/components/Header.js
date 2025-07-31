@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FiMap, FiList, FiBarChart3, FiRefreshCw } from 'react-icons/fi';
+import { FiMap, FiList, FiBarChart2, FiRefreshCw } from 'react-icons/fi';
 import { useNotam } from '../context/NotamContext';
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
   const { refreshNotams, loading } = useNotam();
 
   const navItems = [
-    { path: '/', label: 'Dashboard', icon: FiBarChart3 },
+    { path: '/', label: 'Dashboard', icon: FiBarChart2 },
     { path: '/map', label: 'Map View', icon: FiMap },
     { path: '/notams', label: 'NOTAM List', icon: FiList },
   ];
