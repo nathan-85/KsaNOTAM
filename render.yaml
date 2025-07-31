@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ksa-notams-viewer
+    env: node
+    plan: starter
+    buildCommand: npm run install:all && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    healthCheckPath: /health
+    autoDeploy: true
